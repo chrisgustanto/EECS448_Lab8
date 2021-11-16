@@ -1,0 +1,67 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+h1
+{
+  color: white;
+  text-align: center;
+}
+
+p
+{
+  background-color: lightBlue;
+  color: black;
+  font-family: arial;
+  font-size: 18pt;
+  text-align: center;
+}
+p.chungi
+{
+  background-color: aquamarine;
+  color: darkred;
+  font-family: Tahoma, sans-serif;
+  font-size: 23pt;
+  text-align: center;}
+
+p:hover
+{
+  background-color: red;
+  color: blue
+  text-align: center;
+
+}
+
+h2
+{
+  background-color: lightGreen;
+  color: black;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 24pt;
+  text-align: center;
+}
+li
+{
+  background-color: gold;
+  text-align: center;
+
+}
+li:hover
+{
+  background-color: lightpink;
+  color: white;
+  text-align: center;
+
+}
+
+body
+{
+  background-image: url(landscape.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+
+}

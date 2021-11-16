@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <title>CSS Manipulation</title>
+</head>
+
+<body>
+  <h1> CSS Manipulation </h1>
+
+  <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+    ut aliquip ex ea commodo consequat.</p>
+
+  <h3>Choose border color (in hex, 00-FF): <input type="text" id="border-color"></h3>
+  <h3> Choose border width: <input type="text" id="border-width"></h3>
+  <input type="submit" onclick="changeBorder()">
+  <h3>Choose background color (in hex, 00-FF): <input type="text" id="bg-color"> </h3>
+  <input type="submit" onclick="changeBackground()">
+
+
+  <script>
+  function changeBorder()
+  {
+    let bcolor = document.getElementById("border-color").value;
+    let bwidth = document.getElementById("border-width").value;
+
+    if (bcolor.length>6)
+    {
+      alert("Hex value cannot be greater than 6 characters")
+    }
+    else {
+      document.getElementById("paragraph").style.outlineColor = "#"+bcolor;
+      document.getElementById("paragraph").style.outlineWidth = bwidth+"px";
+    }
+  }
+
+  function changeBackground()
+  {
+    let bgcolor = document.getElementById("bg-color").value;
+    if (bgcolor.length>6)
+    {
+      alert("Hex value cannot be greater than 6 characters")
+    }
+    else {
+      document.getElementById("paragraph").style.backgroundColor = "#"+bgcolor;
+    }
+  }
+  </script>
+</body>
+
+</html>
