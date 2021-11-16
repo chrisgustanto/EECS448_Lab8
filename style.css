@@ -1,0 +1,30 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+h1
+{
+  text-align: center;
+}
+
+h2
+{
+  color: darkred;
+  font-family: Tahoma, sans-serif;
+}
+
+p
+{
+font-family: "Lucida Console", "Courier New", monospace;
+font-size: 24pt;
+}
+
+
+button
+{
+  background-color: lightcoral;
+  color: blue;
+}
